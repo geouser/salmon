@@ -636,4 +636,55 @@ i.contact {
 
 
 
+
+/* --------------------------------------
+   Geography
+   -------------------------------------- */
+#geography {
+    padding: 90px 0 50px;
+}
+#geography p {
+    color: #323232;
+    font-size: 17px;
+    line-height: 30px;
+    width: 72%;
+    display: block;
+    margin: 0 auto 35px;
+}
+#geography img {
+    width: 100%;
+}
+
+
+@media (max-width: 1600px) {
+    #geography {
+        padding: 50px 0;
+    }
+    #geography p {
+        width: 90%;
+    }
+}
+
+/* --------------------------------------
+   Contacts
+   -------------------------------------- */
+#contacts {
+    padding: 100px 0 0;
+}
+#contacts h2 {
+    margin-bottom: 60px;
+}
+
+
+@media (max-width: 1600px) {
+    #contacts {
+        padding: 50px 0 0;
+    }
+    #contacts h2 {
+        margin-bottom: 30px;
+    }
+}
+
+
+
 /*---------------------------------------------------------------*/
