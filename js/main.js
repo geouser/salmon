@@ -37,6 +37,9 @@ jQuery(document).ready(function($) {
     $.magnificPopup.close();
   });
 
+
+  $('#side_pannel').perfectScrollbar();
+
 });
 
 
