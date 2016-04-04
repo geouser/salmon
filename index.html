@@ -42,11 +42,22 @@
 
             <div class="socials">
                 <p>Мы в соцсетях</p>
-                <a href=""></a><a href=""></a>
+                <a href="#" class="fb"></a>
+                <a href="#" class="vk"></a>
             </div>
 
         </header>
         <!-- end #side_pannel -->
+
+
+
+        <!-- #products_navigation -->
+        <div id="products_navigation" class="products_navigation">
+            <a href="#" class="caviar" data-tooltip="Свежая икра"></a>
+            <a href="#" class="fish" data-tooltip="Свежая рыба"></a>
+        </div>
+        <!-- end products_navigation -->
+
 
 
         <!-- #products -->
@@ -186,9 +197,44 @@
         <section id="contacts" class="contacts">
             <div class="wrapper">
                 <h2>Контакты</h2>
+
+                <div class="map">
+                    <div class="map__map-canvas" id="map-canvas" data-lat="50.533002" data-long="137.025906"></div>
+                    <div class="map__info">
+                        <h3>Юридический адрес</h3>
+                        <ul>
+                            <li>
+                                <span class="map__info__name">Телефон:</span>
+                                <span class="map__info__text">+7 (4212) 607 500</span></li>
+                            <li>
+                                <span class="map__info__name">E-mail:</span>
+                                <span class="map__info__text">info@losos.ru</span></li>
+                            </li>
+                            <li>
+                                <span class="map__info__name">Адрес:</span>
+                                <span class="map__info__text">682640 Хабаровский край, <br>г. Амурск, проспект Мира, д.5</span></li>
+                            </li>
+                            <li>
+                                <span class="map__info__name">Часы работы:</span>
+                                <span class="map__info__text">Пн - пт    10.00 - 21.00 <br>Сб - вс     11.00 - 20.00</span></li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- end #contacts -->
+
+
+
+        <!-- footer -->
+        <footer>
+            <div class="wrapper">
+                <p class="copy">© Дикий лосось 2015</p>
+                <p class="made_in">Сделано в <a href="http://best-lp.ru">best-lp.ru</a></p>    
+            </div>
+        </footer>
+        <!-- end footer -->
 
 
   	    <!-- //////////////////////////////////////////////////////////////////////// -->
@@ -200,6 +246,7 @@
        
         <script src="js/slick/slick.min.js"></script>
         <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.10/css/perfect-scrollbar.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.10/js/min/perfect-scrollbar.jquery.min.js"></script>
