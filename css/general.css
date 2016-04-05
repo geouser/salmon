@@ -4850,3 +4850,41 @@ i.earphones {
 }
 
 /*---------------------------------------------------------------*/
+
+.caviar,
+.fish {
+    -webkit-animation: pulseCus 2.5s linear infinite;
+  -moz-animation: pulseCus 2.5s linear infinite;
+  -ms-animation: pulseCus 2.5s linear infinite;
+  animation: pulseCus 2.5s linear infinite;
+}
+
+@-moz-keyframes pulseCus {
+ 0% {
+    transform: scale(1.0)
+ }
+ 70% {
+    transform: scale(1.0)
+ }
+ 80% {
+  transform: scale(1.2)
+ }
+ 85% {
+  transform: scale(1.0)
+ }
+ 90% {
+  transform: scale(1.2)
+ }
+ 100% {
+  transform: scale(1.0)
+ }
+
+}
+
+.caviar:hover,
+.fish:hover  {
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  animation: none;
+}
