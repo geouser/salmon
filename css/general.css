@@ -4174,6 +4174,10 @@ i.contact {
     font-size: 20px;
     position: relative;
     z-index: 5;
+    background-image: url(../images/fish-footer.png);
+    background-size: 100%;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
 }
 .map__info h3 {
     font-size: 38px;
@@ -4265,7 +4269,7 @@ i.contact {
         margin-bottom: 30px;
     }
     .map__info {
-        padding: 50px;
+        padding: 50px 50px 100px 50px;
         font-size: 16px;
     }
     .map__info h3 {
