@@ -3615,14 +3615,83 @@ body {
     padding-bottom: 80px;
     min-height: 700px;
 }
+
+
+@-webkit-keyframes rotating  {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
 .main_logo {
     display: block;
     width: 100%;
     margin: 0;
+    height: 330px;
+    position: relative;
+    overflow: hidden;
+}
+.main_logo .decor {
+  position: absolute;
+  z-index: 1;
+  top: -21%;
+  left: -21%;
+  width: 142%;
+  -webkit-animation: rotating 30s linear infinite;
+     -moz-animation: rotating 30s linear infinite;
+      -ms-animation: rotating 30s linear infinite;
+       -o-animation: rotating 30s linear infinite;
+          animation: rotating 30s linear infinite;
+}
+.main_logo .sky {
+  position: absolute;
+  width: 60%;
+  top: 30%;
+  left: 20%;
+  z-index: 2;
+}
+.main_logo .bear {
+  width: 50%;
+  position: absolute;
+  z-index: 3;
+  top: 37%;
+  left: 25%;
+}
+@media (max-width: 1600px) {
+  .main_logo {
+    height: 250px;
+  }
 }
 .main_logo img {
     width: 100%;
-    height: auto;
+    
 }
 .main_menu {
     display: block;
@@ -4952,6 +5021,4 @@ i.earphones {
 }
 
 
-.main_logo  {position: relative; display: block; width: 100%;}
-.main_logo object {position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto;}
-.main_logo object:nth-of-type(1) {position: static; width: 120%;}
+
