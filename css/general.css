@@ -3664,11 +3664,11 @@ body {
   top: -21%;
   left: -21%;
   width: 142%;
-  -webkit-animation: rotating 30s linear infinite;
-     -moz-animation: rotating 30s linear infinite;
-      -ms-animation: rotating 30s linear infinite;
-       -o-animation: rotating 30s linear infinite;
-          animation: rotating 30s linear infinite;
+  -webkit-animation: rotating 50s linear infinite;
+     -moz-animation: rotating 50s linear infinite;
+      -ms-animation: rotating 50s linear infinite;
+       -o-animation: rotating 50s linear infinite;
+          animation: rotating 50s linear infinite;
 }
 .main_logo .sky {
   position: absolute;
