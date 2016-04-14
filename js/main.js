@@ -21,23 +21,7 @@ window.params = {
 
 jQuery(document).ready(function($) {
 
-  var $columns = $('.side_pannel, .wrapContent');
-  var height = 0;
-  $columns.each(function () {
-    if ($(this).height() > height) {
-      height = $(this).height();
-    }
-  });
-  $columns.height(height);
-  
-  $(window).resize(function (){
-    $columns.each(function () {
-      if ($(this).height() > height) {
-        height = $(this).height();
-      }
-    });
-    $columns.height(height);
-  });
+
 /*-----------------------------------------------------------------*/  
   $('.magnific').magnificPopup({
     type: 'inline',

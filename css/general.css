@@ -3426,13 +3426,16 @@ dl,h3,hr,menu,ol,p,pre,ul{margin:1em 0}hr,img,legend{border:0}body,fieldset,figu
 
 
 /*General styles*/
-html, body                    {    height: 100%;}
+html {height: 100%;}
 body                          {    margin: 0;
                                    padding: 0;
+                                   min-height: 100%;
                                    -ms-overflow-x: hidden;
                                        overflow-x: hidden;
                                    font-family: 'proxima_nova_rgregular';
-                                   color: #000;}
+                                   color: #000;
+                                   position: relative;
+                                   }
 
 
 h1, h2, h3, h4, h5, p         {    margin: 0;}
@@ -3581,16 +3584,17 @@ i.scroll {
 #side_pannel {
     display: inline-block;
     vertical-align: top;
-    position: relative;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    bottom: 0;
     width: 330px;
-    min-height: 100%;
     background-color: #1A4A72;
     box-shadow: 1px 1px 51px 0px rgba(87, 87, 87, 0.18);
     text-align: center;
     z-index: 20;
     margin-right: -4px;
     color: #fff;
-    padding-bottom: 80px;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -3599,13 +3603,17 @@ i.scroll {
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
+body {
+        padding-left: 330px;
+    }
 .wrapContent {
     display: inline-block;
-    width: calc(100% - 330px);
+    width: 100%;
     vertical-align: top;
     position: relative;
      margin-right: -3px;
     padding-bottom: 80px;
+    min-height: 700px;
 }
 .main_logo {
     display: block;
@@ -3645,7 +3653,7 @@ i.scroll {
 
 .contact_us {
     position: relative;
-    margin: 250px 0 100px;
+    margin: 240px 0 100px;
 }
 .contact_us:after {
     content: '';
@@ -3673,7 +3681,6 @@ i.contact {
 }
 
 .socials {
-    margin-bottom: 30px;
 }
 .socials p {
     font: 16px 'proxima_novalight';
@@ -3722,8 +3729,8 @@ i.contact {
         width: 250px;
         background-position: 50% 820px;
     }
-    .wrapContent {
-        width: calc(100% - 250px);
+    body {
+        padding-left: 250px;
     }
     .contact_us {
         margin-top: 50px;
