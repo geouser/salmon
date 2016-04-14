@@ -3458,7 +3458,6 @@ a[href^=tel]                  {     color:inherit !important; text-decoration:no
 .wrapper                      {    margin: 0 auto;
                                    text-align: center;
                                    width: 100%;
-                                   border-left: 330px solid transparent;
                                    position: relative;}
 
 
@@ -3475,7 +3474,6 @@ h2 {
         font-size: 40px;
     }
     .wrapper {
-        border-left-width: 250px;
     }
 }
 @media (max-width: 1200px) {
@@ -3588,17 +3586,28 @@ i.scroll {
    Side Pannel
    -------------------------------------- */
 #side_pannel {
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
+    display: inline-block;
+    vertical-align: top;
     width: 330px;
-    height: 100%;
-    padding-top: 50px;
-    background-color: #fff;
+    min-height: 100%;
+    background-color: #1A4A72;
     box-shadow: 1px 1px 51px 0px rgba(87, 87, 87, 0.18);
     text-align: center;
     z-index: 20;
+    margin-right: -4px;
+    color: #fff;
+    padding-bottom: 80px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.wrapContent {
+    display: inline-block;
+    width: calc(100% - 330px);
+    vertical-align: top;
+    position: relative;
+     margin-right: -3px;
+    padding-bottom: 80px;
 }
 .main_logo {
     display: block;
@@ -3626,7 +3635,7 @@ i.scroll {
     text-transform: uppercase;
     font: 16px/47px 'proxima_novalight';
     letter-spacing: 1px;
-    color: #000;
+    color: #fff;
     transition: all 0.3s ease;
 }
 .main_menu__link a:hover,
@@ -3662,7 +3671,7 @@ i.contact {
     font: 16px 'proxima_novalight';
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #000;
+    color: #fff;
 }
 
 .socials {
@@ -3713,6 +3722,9 @@ i.contact {
 @media (max-width: 1600px) {
     #side_pannel {
         width: 250px;
+    }
+    .wrapContent {
+        width: calc(100% - 250px);
     }
     .contact_us {
         margin-top: 50px;
@@ -4274,7 +4286,9 @@ footer {
     background-color: #FFF7F0;
     color: #686868;
     font-family: 'proxima_novalight';
-    position: relative;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
     z-index: 15;
 }
 footer .copy {
@@ -4543,7 +4557,6 @@ footer .made_in a:hover {
    Single News
    -------------------------------------- */
 .single_news {
-    min-height: calc(100% - 165px);
 }
 .single_news .wrapper {
     padding: 0 50px;
