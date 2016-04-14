@@ -3473,14 +3473,8 @@ h2 {
     h2 {
         font-size: 40px;
     }
-    .wrapper {
-    }
 }
-@media (max-width: 1200px) {
-  .wrapper {
-    width: 1200px;
-  }
-}
+
 
 
 
@@ -3556,7 +3550,7 @@ h2 {
     margin-left: -40px;
     position: absolute;
     bottom: 35px;
-    left: calc(50% + 165px);
+    left: 50%;
 }
 .scroll_down span {
     font-size: 12px;
@@ -3574,7 +3568,6 @@ i.scroll {
 @media (max-width: 1600px) {
     .scroll_down {
         bottom: 0;
-        left: calc(50% + 125px);
     }
 }
 /* --------------------------------------
@@ -3588,6 +3581,7 @@ i.scroll {
 #side_pannel {
     display: inline-block;
     vertical-align: top;
+    position: relative;
     width: 330px;
     min-height: 100%;
     background-color: #1A4A72;
@@ -3600,6 +3594,10 @@ i.scroll {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
+    background-image: url(../images/sidebar.jpg);
+    background-position: 50% 1070px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 .wrapContent {
     display: inline-block;
@@ -3611,8 +3609,8 @@ i.scroll {
 }
 .main_logo {
     display: block;
-    width: 63%;
-    margin: 0 auto 45px;
+    width: 100%;
+    margin: 0;
 }
 .main_logo img {
     width: 100%;
@@ -3657,7 +3655,7 @@ i.scroll {
     margin-left: -22px;
     width: 44px;
     height: 1px;
-    background-color: #FF510B;
+    background-color: #fff;
 }
 i.contact {
     display: block;
@@ -3722,6 +3720,7 @@ i.contact {
 @media (max-width: 1600px) {
     #side_pannel {
         width: 250px;
+        background-position: 50% 820px;
     }
     .wrapContent {
         width: calc(100% - 250px);
@@ -3739,8 +3738,6 @@ i.contact {
 #products {
     position: relative;
     padding: 120px 0;
-    height: 100%;
-    min-height: 850px;
     text-align: center;
     background: url(../images/products_bg.jpg) 50% 50% no-repeat;
     background-size: cover;
@@ -3892,6 +3889,10 @@ i.contact {
 .subscribing {
     padding-left: 40px;
     text-align: left;
+    background-image: url(../images/subscribe.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 .subscribing .wrap {
     display: inline-block;
@@ -3902,18 +3903,22 @@ i.contact {
 .subscribing__title {
     font-size: 28px;
     margin-bottom: 20px;
+    color: #fff;
 }
 .subscribing__form {
     width: 400px;
     height: 80px;
     border-radius: 40px;
-    border: 3px solid #E9E9E9;
+    border: 3px solid #1A4A72;
     padding: 6px;
+    background-color: #fff;
 }
 .subscribing__form input {
     width: 62%;
     margin: 0 -2px;
     font-size: 14px;
+    color: #1A4A72;
+    font-family: 'proxima_nova_rgregular';
     border: none;
     padding-left: 27px;
 }
@@ -4163,7 +4168,7 @@ i.contact {
 .map__info {
     width: 50%;
     padding: 140px 100px 75px;
-    background-color: rgba(0, 0, 0, .67);
+    background-color: rgba(49, 75, 112, .9);
     color: #fff;
     text-align: left;
     font-size: 20px;

@@ -53,9 +53,6 @@ $columns.height(height);
     $.magnificPopup.close();
   });
 
-
-  $('#side_pannel').perfectScrollbar();
-
   var map;
   function googleMap_initialize() {
     var lat = $('#map-canvas').attr('data-lat');
@@ -86,8 +83,6 @@ $columns.height(height);
       title:"ДИКИЙ ЛОСОСЬ"
     });
 
-    var markersBounds = new google.maps.LatLngBounds();
-    console.log(markersBounds.extend(mapCenterCoord));
     
     $(window).resize(function (){
       map.setCenter(mapCenterCoord);
