@@ -4201,27 +4201,38 @@ i.contact {
 /* --------------------------------------
    Geography
    -------------------------------------- */
+#geography {
+  background-image: url(../images/map_bg.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
 #geography .wrapper {
-    background: url(../images/geography_bg.jpg) 0 50px no-repeat;
+    background: url(../images/ship.png) 0 50px no-repeat, 
+                url(../images/rule.png) 98% 98% no-repeat;
     padding: 90px 0 50px;
 }
 #geography p {
-    color: #323232;
+    color: #fff;
     font-size: 17px;
     line-height: 30px;
     width: 72%;
     display: block;
     margin: 0 auto 35px;
 }
+#geography h2 {
+  color: #fff;
+}
 #geography img {
-    width: 100%;
+    width: 90%;
 }
 
 
 @media (max-width: 1600px) {
     #geography .wrapper{
         padding: 50px 0;
-        background-position: 0 0;
+        background: url(../images/ship.png) 0 20px no-repeat, 
+                    url(../images/rule.png) 98% 98% no-repeat;
     }
     #geography p {
         width: 90%;
